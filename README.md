@@ -25,7 +25,6 @@ Amazon RDS for MySQL database
 3. Created Auto Scaling Group (min: 2 instances)
 4. Created RDS MySQL database
 5. Configured database:
-
    * Database name: intel
    * Table name: data
 6. Connected EC2 to RDS
@@ -115,15 +114,8 @@ The application is accessed via the Application Load Balancer DNS.
 
 A MySQL database was created using Amazon RDS.
 
-### Database Details
-- Database Name: intel
-- Table Name: data
-
-### Table Structure
-- id (Primary Key)
-- name (VARCHAR)
-
 ### 📸 Database Table
+
 ![RDS Table](screenshots-rds-data.png)
 
 
