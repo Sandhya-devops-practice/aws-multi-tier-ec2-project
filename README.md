@@ -118,6 +118,15 @@ A MySQL database was created using Amazon RDS.
 
 ![RDS Table](screenshots-rds-data.png)
 
+## Application Output
+
+This confirms that the EC2-hosted PHP application is successfully connected to the RDS MySQL database.
+The application successfully retrieves data from the RDS database:
+
+Data from RDS:
+ID: 1 - Name: AWS Project
+![DNS](screenshots-dns-browser.png)
+
 
 ### Website Output
 
