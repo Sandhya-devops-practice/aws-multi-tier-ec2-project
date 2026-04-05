@@ -98,6 +98,8 @@ The launch template was successfully created and will be used by the Auto Scalin
 The Auto Scaling Group ensures that the application remains available by automatically replacing unhealthy instances and maintaining the desired capacity.
 ![ASG](asg-config.png)
 
+![ASG](asg-instances.png)
+
 ### Load-Balancer
 ![LB](load-balancer.png)
 
@@ -126,9 +128,7 @@ A MySQL database was created using Amazon RDS.
 
 
 ### Website Output
-![Output](screenshots/output.png)
 
-![ASG](asg-instances.png)
 
 ---
 
