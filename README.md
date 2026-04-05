@@ -7,7 +7,7 @@ In this project demonstrates how to deploy a highly available PHP web applicatio
 
 ---
 ### AWS Multi-Tier Architecture
-![EC2](architecture1.png)
+![EC2](architecture.png)
 
 ## 🏗️ Architecture
 
