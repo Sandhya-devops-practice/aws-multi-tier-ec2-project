@@ -3,9 +3,11 @@ A real-world AWS project demonstrating high availability and scalability using A
 
 ## 📌 Project Overview
 
-This project demonstrates how to deploy a highly available PHP web application on AWS using EC2, Auto Scaling, and RDS.
+In this project demonstrates how to deploy a highly available PHP web application on AWS using EC2, Auto Scaling, and RDS.
 
 ---
+### AWS Multi-Tier Architecture
+![EC2](architecture1.png)
 
 ## 🏗️ Architecture
 
