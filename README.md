@@ -79,14 +79,56 @@ A health check endpoint is implemented for load balancer monitoring.
 A custom AMI was created from the configured EC2 instance so that Auto Scaling can launch pre-configured instances with Apache, PHP, and application code.
 ![AMI](screenshots-customAMI.png)
 
-### Auto Scaling Group
-![ASG](screenshots/autoscaling.png)
+## 🚀 Launch Template Configuration
 
-### RDS Database
-![RDS](screenshots/rds.png)
+A Launch Template was created to define the configuration for EC2 instances used in Auto Scaling.
+
+![Launch-Template](launch-template.png)
+
+### Purpose
+- Standardizes EC2 instance configuration
+- Enables Auto Scaling to launch identical instances
+- Ensures consistency across all instances
+
+### ✅ Verification
+
+The launch template was successfully created and will be used by the Auto Scaling Group to launch EC2 instances with predefined configurations.
+
+### Auto Scaling Group
+The Auto Scaling Group ensures that the application remains available by automatically replacing unhealthy instances and maintaining the desired capacity.
+![ASG](asg-config.png)
+
+### Load-Balancer
+![LB](load-balancer.png)
+
+## 🌐 Load Balancer Output
+
+The application is accessed via the Application Load Balancer DNS.
+![LB](alb-output.png)
+
+### Target-Group
+![TG](target-group-health.png)
+
+## 🗄️ RDS Database Setup
+
+A MySQL database was created using Amazon RDS.
+
+### Database Details
+- Database Name: intel
+- Table Name: data
+
+### Table Structure
+- id (Primary Key)
+- name (VARCHAR)
+
+### 📸 Database Table
+![RDS Table](screenshots-rds-data.png)
+
 
 ### Website Output
 ![Output](screenshots/output.png)
+
+![ASG](asg-instances.png)
 
 ---
 
