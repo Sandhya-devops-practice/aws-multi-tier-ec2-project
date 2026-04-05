@@ -37,7 +37,7 @@ Amazon RDS for MySQL database
 ## 📸 Screenshots
 
 ### EC2 Instance
-![EC2](screenshots-ec2.png)
+![EC2](screenshots1-ec2.png)
 
 ### Application Running on Public IP
 ![EC2](screenshots-browser.png)
