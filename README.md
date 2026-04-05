@@ -1,4 +1,5 @@
 # 🚀 AWS Multi-Tier Architecture Project (EC2 + RDS + Auto Scaling)
+A real-world AWS project demonstrating high availability and scalability using Auto Scaling and RDS.
 
 ## 📌 Project Overview
 
@@ -33,15 +34,25 @@ This project demonstrates how to deploy a highly available PHP web application o
 
 ## 📸 Screenshots
 
-(Add screenshots in /screenshots folder)
+### EC2 Instance
+![EC2](screenshots/ec2.png)
+
+### Auto Scaling Group
+![ASG](screenshots/autoscaling.png)
+
+### RDS Database
+![RDS](screenshots/rds.png)
+
+### Website Output
+![Output](screenshots/output.png)
 
 ---
 
 ## 🎯 Key Features
 
-* High Availability
-* Scalability
-* Fault Tolerance
+* High Availability using Auto Scaling Group
+* Scalable infrastructure to handle traffic spikes
+* Fault tolerance with multiple EC2 instances
 
 ---
 
