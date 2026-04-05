@@ -9,12 +9,12 @@ In this project demonstrates how to deploy a highly available PHP web applicatio
 ### AWS Multi-Tier Architecture
 ![EC2](architecture.png)
 
-## 🏗️ Architecture
+## Architecture Overview
 
-* EC2 instances act as web servers
-* Auto Scaling Group ensures high availability (minimum 2 instances)
-* RDS MySQL database stores application data
-* Security groups control traffic between services
+Amazon EC2 for hosting the PHP application
+Elastic Load Balancing to distribute traffic
+Auto Scaling for high availability
+Amazon RDS for MySQL database
 
 ---
 
@@ -37,7 +37,10 @@ In this project demonstrates how to deploy a highly available PHP web applicatio
 ## 📸 Screenshots
 
 ### EC2 Instance
-![EC2](screenshots/ec2.png)
+![EC2](screenshots-ec2.png)
+
+### Application Running on Public IP
+![EC2](screenshots-browser.png)
 
 ### Auto Scaling Group
 ![ASG](screenshots/autoscaling.png)
