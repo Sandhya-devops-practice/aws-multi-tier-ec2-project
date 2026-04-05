@@ -34,13 +34,50 @@ Amazon RDS for MySQL database
 
 ---
 
+
 ## 📸 Screenshots
 
 ### EC2 Instance
 ![EC2](screenshots1-ec2.png)
 
-### Application Running on Public IP
+## 📸 PHP Application Working
 ![EC2](screenshots-browser.png)
+
+### ✅ Application Deployment Verification
+
+The PHP-based web application was successfully deployed on the EC2 instance.
+
+Accessing the public IP displays the custom application page:
+"Welcome to ABC Company Website - Auto Scaling Demo"
+
+This confirms:
+- Apache is running
+- PHP is configured correctly
+- Application is accessible over HTTP
+
+## ❤️ Health Check Endpoint
+
+A health check endpoint is implemented for load balancer monitoring.
+
+### Endpoint
+`/health.php`
+
+### Response
+`OK`
+
+### 📸 Health Check Output
+
+![Health Check](screenshots-health-check.png)
+
+### Purpose
+- Used by Application Load Balancer (ALB)
+- Ensures instances are healthy
+- Helps Auto Scaling replace unhealthy instances
+
+## Create Custom AMI
+
+A custom AMI was created from the configured EC2 instance so that Auto Scaling can launch pre-configured instances with Apache, PHP, and application code.
+![AMI](screenshots-customAMI.png)
 
 ### Auto Scaling Group
 ![ASG](screenshots/autoscaling.png)
