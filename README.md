@@ -155,18 +155,6 @@ Data from RDS:
 ID: 1 - Name: AWS Project
 ![DNS](screenshots-dns-browser.png)
 
-
-### Website Output
-
-
----
-
-## 🎯 Key Features
-
-* High Availability using Auto Scaling Group
-* Scalable infrastructure to handle traffic spikes
-* Fault tolerance with multiple EC2 instances
-
 ---
 
 ## 🛠️ Tech Stack
