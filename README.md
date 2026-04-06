@@ -3,7 +3,14 @@ A real-world AWS project demonstrating high availability and scalability using A
 
 ## 📌 Project Overview
 
-In this project demonstrates how to deploy a highly available PHP web application on AWS using EC2, Auto Scaling, and RDS.
+This project demonstrates how to deploy a highly available PHP web application on AWS using EC2, Auto Scaling, and RDS.
+
+## 🚀 Key Highlights
+
+- Designed a scalable AWS architecture using EC2, ALB, and RDS
+- Implemented Auto Scaling for high availability
+- Configured health checks for fault tolerance
+- Built and deployed a PHP application integrated with RDS
 
 ---
 ### AWS Multi-Tier Architecture
@@ -11,28 +18,49 @@ In this project demonstrates how to deploy a highly available PHP web applicatio
 
 ## Architecture Overview
 
-Amazon EC2 for hosting the PHP application
-Elastic Load Balancing to distribute traffic
-Auto Scaling for high availability
-Amazon RDS for MySQL database
+- Amazon EC2 is used to host the PHP application
+- Application Load Balancer distributes incoming traffic
+- Auto Scaling ensures high availability and fault tolerance
+- Amazon RDS (MySQL) is used as the backend database
 
 ---
+
+## 🧠 Architecture Explanation
+
+- User traffic is routed through the Application Load Balancer
+- Load Balancer distributes requests across multiple EC2 instances
+- Auto Scaling dynamically adjusts the number of instances
+- EC2 instances communicate with RDS for database operations
+- Health checks ensure system reliability
+
+## 🔍 Architecture Flow
+
+1. User sends request to Application Load Balancer
+2. Load Balancer distributes traffic to EC2 instances
+3. Auto Scaling maintains required number of instances
+4. EC2 instances process requests and interact with RDS
+5. Health checks monitor instance status
+6. Unhealthy instances are replaced automatically
 
 ## ⚙️ Implementation Steps
 
-1. Launched EC2 instance (Ubuntu)
-2. Installed Apache, PHP, MySQL client
-3. Created Auto Scaling Group (min: 2 instances)
-4. Created RDS MySQL database
-5. Configured database:
-   * Database name: intel
-   * Table name: data
-6. Connected EC2 to RDS
-7. Updated website with RDS endpoint
-8. Configured security groups for communication
-
+1. Launched an EC2 instance using Ubuntu AMI
+2. Installed Apache, PHP, and MySQL client
+3. Deployed PHP application
+4. Created an RDS MySQL database
+5. Configured database and connected it to EC2
+6. Created a custom AMI from configured instance
+7. Created Launch Template using the AMI
+8. Configured Auto Scaling Group (min: 2 instances)
+9. Attached Application Load Balancer
+10. Configured security groups and health checks
 ---
 
+## 🔐 Security Group Configuration
+
+- SSH (22) → Instance access
+- HTTP (80) → Web traffic
+- MySQL (3306) → EC2 to RDS communication
 
 ## 📸 Screenshots
 
@@ -148,3 +176,9 @@ ID: 1 - Name: AWS Project
 * Auto Scaling
 * PHP
 * MySQL
+
+## ✅ Conclusion
+
+This project provided hands-on experience in designing and deploying a highly available and scalable architecture on AWS. It strengthened my understanding of core cloud concepts such as load balancing, auto scaling, and database integration using Amazon RDS.
+
+Through this implementation, I also gained practical knowledge of handling real-world scenarios like health checks, fault tolerance, and infrastructure reliability.
