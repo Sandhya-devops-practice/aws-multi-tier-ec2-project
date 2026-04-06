@@ -110,6 +110,12 @@ This project demonstrates how to deploy a highly available PHP web application o
 - HTTP (80) → Web traffic
 - MySQL (3306) → EC2 to RDS communication
 
+## Commands Used
+
+- Install Apache & PHP
+- Connect to MySQL
+- Restart services
+
 ## 📸 Screenshots
 
 ### EC2 Instance
