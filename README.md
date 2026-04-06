@@ -42,6 +42,13 @@ A real-world AWS project demonstrating high availability and scalability using A
 
   This ensured proper health monitoring and allowed Auto Scaling to maintain healthy instances.
 
+## 📌 Prerequisites
+
+- AWS Account
+- Basic knowledge of EC2, RDS, and networking
+- SSH client (PuTTY / Terminal)
+- Key pair for EC2 access
+
 ## 📌 Project Overview
 
 This project demonstrates how to deploy a highly available PHP web application on AWS using EC2, Auto Scaling, and RDS.
@@ -205,6 +212,13 @@ ID: 1 - Name: AWS Project
 * Auto Scaling
 * PHP
 * MySQL
+
+## 🚀 Deployment Verification
+
+- Application accessed via EC2 Public IP
+- Application accessed via Load Balancer DNS
+- Data successfully retrieved from RDS
+- Health check endpoint verified (`/health.php`)
 
 ## ✅ Conclusion
 
