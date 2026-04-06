@@ -1,6 +1,47 @@
 # 🚀 AWS Multi-Tier Architecture Project (EC2 + RDS + Auto Scaling)
 A real-world AWS project demonstrating high availability and scalability using Auto Scaling and RDS.
 
+## ⚠️ Challenges Faced
+
+- Application Load Balancer showing outdated application data →
+
+  After configuring the Load Balancer, the application was accessible via DNS, but it was displaying output from an older AMI version instead of retrieving updated data from the RDS database.
+
+  Root Cause:
+  The Auto Scaling Group was still using an older AMI in the Launch Template, so newly launched instances were running outdated application code.
+
+  Resolution:
+  - Created a new AMI with the latest application changes
+  - Updated the Launch Template to use the latest AMI version
+  - Reconfigured the Auto Scaling Group to use the updated template
+
+  After these changes, the Load Balancer DNS correctly routed traffic to updated instances, and the application successfully retrieved data from the RDS database.
+
+  This issue helped me understand the relationship between AMI, Launch Template, and Auto Scaling Group in AWS.
+
+
+- RDS connectivity and data retrieval issues →
+
+  Initially, the application was not able to retrieve data from the RDS database.
+
+  Resolution:
+  - Verified RDS endpoint configuration in the application
+  - Ensured security groups allowed inbound MySQL (3306) traffic from EC2
+  - Confirmed database credentials and connectivity
+
+  After fixing these configurations, the application successfully connected to RDS and fetched data.
+
+
+- Health check configuration issues →
+
+  During Load Balancer setup, instances were marked unhealthy.
+
+  Resolution:
+  - Created a dedicated `/health.php` endpoint returning `OK`
+  - Configured the Target Group health check path correctly
+
+  This ensured proper health monitoring and allowed Auto Scaling to maintain healthy instances.
+
 ## 📌 Project Overview
 
 This project demonstrates how to deploy a highly available PHP web application on AWS using EC2, Auto Scaling, and RDS.
