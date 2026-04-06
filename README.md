@@ -118,9 +118,9 @@ This project demonstrates how to deploy a highly available PHP web application o
 
 ## 📁 Project Files
 
-### 🔹 index.php
+- 🔹 [index.php](index.php) → Main application file (connects to RDS and displays data)
 
-### 🔹 health.php
+- 🔹 [health.php](health.php) → Health check endpoint (returns OK for load balancer)
 
 
 ## 📸 Screenshots
