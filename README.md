@@ -116,6 +116,13 @@ This project demonstrates how to deploy a highly available PHP web application o
 - Connect to MySQL
 - Restart services
 
+## 📁 Project Files
+
+### 🔹 index.php
+
+### 🔹 health.php
+
+
 ## 📸 Screenshots
 
 ### EC2 Instance
